@@ -20,8 +20,7 @@ Here's an organized overview of the system implementation using Node.js, React, 
 
 ## Backend (Node.js with Express)
 #### Backend Repository
-- [Link to Backend Repository](https://github.com/YaelGluskin/covidcare-api)
-- [Link to Commit History](https://github.com/YaelGluskin/COVIDCare/commits/main/ServerSide)
+- [Link to Backend Repository](https://github.com/YaelGluskin/covidcare.api)
 
 1. **Server Setup**: 
    - Implemented using Node.js with Express framework.
@@ -33,7 +32,7 @@ Here's an organized overview of the system implementation using Node.js, React, 
      - **Users**: Stores information about system users, such as login credentials and roles.
      - **Clients**: Contains details of individual clients, including personal information and health data.
      - **Diseases**: Stores information about various diseases.
-     - **Vaccinations**: Contains data related to vaccinations, including vaccine types and administration details.
+     - **Vaccinations**: Contains vaccination data, including vaccine types and administration details.
 
 3. **CRUD Operations**:
    - Implemented CRUD functionalities for each collection:
@@ -53,11 +52,10 @@ Here's an organized overview of the system implementation using Node.js, React, 
 
 ## Frontend (React)
 #### Frontend Repository
-- [Link to Frontend Repository](https://github.com/YaelGluskin/covidcare-frontend)
 
 1. **User Interface**:
    - Developed a user-friendly interface using React components.
-   - Organized components for user management, client management, disease management, and vaccination management.
+   - Organized components for user, client, disease, and vaccination management.
 
 2. **Routing**:
    - Utilized React Router for client-side routing to navigate between different views/components.
@@ -73,7 +71,7 @@ Here's an organized overview of the system implementation using Node.js, React, 
 5. **State Management**:
    - Managed application state using React's built-in state and props mechanism or state management libraries like Redux, depending on the complexity of the application.
 
-By following this structured approach, the system effectively manages user data, client information, disease records, and vaccination details while providing a seamless user experience through the React front end.
+Following this structured approach, the system effectively manages user data, client information, disease records, and vaccination details while providing a seamless user experience through the React front end.
 
 ---
 
