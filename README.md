@@ -51,7 +51,7 @@ Here's an organized overview of the system implementation using Node.js, React, 
 
 
 ## Frontend (React)
-#### Frontend Repository
+#### Frontend Repository - this repository. 
 
 1. **User Interface**:
    - Developed a user-friendly interface using React components.
@@ -77,24 +77,7 @@ Following this structured approach, the system effectively manages user data, cl
 
 ### Website Deployment
 
-The website is hosted and deployed using the [Render platform](https://render.com/). It utilizes two separate repositories—one for the backend Repository [covidcare-api ](https://github.com/YaelGluskin/covidcare-api) and one for the front-end Repository [covidcare-frontend ](https://github.com/YaelGluskin/covidcare-frontend)—each containing the respective codebase for their functionalities. With this setup, any updates made to the local codebase will reflect on the live site after being pushed to the respective repository. Render automatically detects changes in the repositories and triggers the necessary build and deployment processes to update the running version of the site accordingly. This ensures that the website is always running the latest version of both the backend and frontend code, providing a seamless and up-to-date user experience.
+The website is hosted and deployed using the [Render platform](https://render.com/). It utilizes two separate repositories—one for the backend Repository [covidcare-api ](https://github.com/YaelGluskin/covidcare.api) and one for the front-end Repository(this repository) —each containing the respective codebase for their functionalities. With this setup, any updates made to the local codebase will reflect on the live site after being pushed to the respective repository. Render automatically detects changes in the repositories and triggers the necessary build and deployment processes to update the running version of the site accordingly. This ensures that the website is always running the latest version of both the backend and frontend code, providing a seamless and up-to-date user experience.
 
 --- 
-
-
-**Server-side simulation by screenshots**
-![Welco,](https://github.com/YaelGluskin/COVIDCare/blob/main/clientside/public/Public.png)
-
-![NAvigate](https://github.com/YaelGluskin/COVIDCare/blob/main/clientside/public/Routing.png)
-
-![Client List](https://github.com/YaelGluskin/COVIDCare/blob/main/clientside/public/clients.png)
-
-![detail](https://github.com/YaelGluskin/COVIDCare/blob/main/clientside/public/client.png)
-
-![new Disease](https://github.com/YaelGluskin/COVIDCare/blob/main/clientside/public/newDis.png)
-
-![Cliant detail](https://github.com/YaelGluskin/COVIDCare/blob/main/clientside/public/createDis.png)
-
-
-
 
