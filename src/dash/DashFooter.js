@@ -14,14 +14,14 @@ const DashFooter = () => {
     let goHomeBtn = null;
     if (pathname !== '/dash') {
         goHomeBtn = (
-            <IconButton color="primary" title="Home" onClick={onGoHomeClicked}>
+            <IconButton style={{ color: 'white' }} title="Home" onClick={onGoHomeClicked}>
                 <FontAwesomeIcon icon={faHouse} />
             </IconButton>
         );
     }
 
     return (
-        <AppBar position="static" color="primary">
+        <AppBar position="static" sx={{ bgcolor: 'primary.dark' }}>
             <Container maxWidth="xl">
                 <Toolbar>
                     {goHomeBtn}

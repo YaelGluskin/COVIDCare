@@ -11,7 +11,7 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useSendLogoutMutation } from '../features/auth/authApiSlice';
 import useAuth from '../hooks/useAuth';
 import { DASH_REGEX, CLIENTS_REGEX, USERS_REGEX, DISEASES_REGEX, VACCINES_REGEX } from "../config/dash";
-import { AppBar, Toolbar, Typography, IconButton, Button, Container, CircularProgress, Alert } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Container, CircularProgress, Alert } from '@mui/material';
 
 const DashHeader = () => {
     const { isManager, isAdmin } = useAuth();
@@ -44,7 +44,7 @@ const DashHeader = () => {
     let newClientButton = null;
     if (CLIENTS_REGEX.test(pathname)) {
         newClientButton = (
-            <IconButton color="primary" title="New Client" onClick={onNewClientsClicked}>
+            <IconButton style={{ color: 'white' }} title="New Client" onClick={onNewClientsClicked}>
                 <FontAwesomeIcon icon={faFileCirclePlus} />
             </IconButton>
         );
@@ -53,7 +53,7 @@ const DashHeader = () => {
     let newUserButton = null;
     if (USERS_REGEX.test(pathname)) {
         newUserButton = (
-            <IconButton color="primary" title="New User" onClick={onNewUserClicked}>
+            <IconButton style={{ color: 'white' }} title="New User" onClick={onNewUserClicked}>
                 <FontAwesomeIcon icon={faUserPlus} />
             </IconButton>
         );
@@ -63,7 +63,7 @@ const DashHeader = () => {
     if (isManager || isAdmin) {
         if (!USERS_REGEX.test(pathname) && pathname.includes('/dash')) {
             userButton = (
-                <IconButton color="primary" title="Users" onClick={onUsersClicked}>
+                <IconButton style={{ color: 'white' }} title="Users" onClick={onUsersClicked}>
                     <FontAwesomeIcon icon={faUserGear} />
                 </IconButton>
             );
@@ -73,14 +73,14 @@ const DashHeader = () => {
     let clientsButton = null;
     if (!CLIENTS_REGEX.test(pathname) && pathname.includes('/dash')) {
         clientsButton = (
-            <IconButton color="primary" title="Clients" onClick={onClientsClicked}>
+            <IconButton style={{ color: 'white' }} title="Clients" onClick={onClientsClicked}>
                 <FontAwesomeIcon icon={faFilePen} />
             </IconButton>
         );
     }
 
     const logoutButton = (
-        <IconButton color="primary" title="Logout" onClick={onLogoutClicked}>
+        <IconButton style={{ color: 'white' }} title="Logout" onClick={onLogoutClicked}>
             <FontAwesomeIcon icon={faRightFromBracket} />
         </IconButton>
     );
@@ -104,7 +104,7 @@ const DashHeader = () => {
     return (
         <>
             {isError && <Alert severity="error">{error?.data?.message}</Alert>}
-            <AppBar position="static">
+            <AppBar position="static" sx={{ bgcolor: 'primary.main' }}>
                 <Container maxWidth="xl">
                     <Toolbar>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
